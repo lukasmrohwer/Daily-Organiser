@@ -5,7 +5,11 @@ from datetime import datetime
 
 def get_schedule(message):
 
+  # load api key from environment
   genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+
+  # hard code api key
+  # genai.configure(api_key="your-api-key-here")
 
   # Create the model
   generation_config = {

@@ -21,7 +21,11 @@ pip install -r requirements.txt
 - Create a project and enable the **Google Calendar API**
 - Download `credentials.json` and place it in the project folder.
 
-4. Run the script:
+4. Set up your Gemini API keyL
+- Create an API key at https://aistudio.google.com/apikey
+- Set up an [environment variable](https://ai.google.dev/gemini-api/docs/api-key) or hard code the API key.
+
+5. Run the script:
 
 ```bash
 python main.py
