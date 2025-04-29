@@ -5,6 +5,7 @@ from gemini import get_schedule
 import os.path
 import pickle
 from datetime import datetime, timedelta
+import sys
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
@@ -15,7 +16,8 @@ def main():
     #Create calendar if it doesn't exist
     calendar_id = create_calendar(service)
 
-    message = "one hour work from home, one hour apply to internship, one hour study for java, tutoring 5-6:30"
+    # take imput from system arguments
+    message = " ".join(sys.argv[1:])
 
     # clear the calendar in case the program is being run twice for the same day
     if "tomorrow" in message:
