@@ -7,7 +7,7 @@ import pickle
 from datetime import datetime, timedelta
 import sys
 
-SCOPES = ['https://www.googleapis.com/auth/calendar']
+SCOPES = ['https://www.googleapis.com/auth/calendar.app.created', 'https://www.googleapis.com/auth/calendar.calendarlist.readonly']
 
 def main():
     #access google calendar api
