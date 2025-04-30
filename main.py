@@ -75,7 +75,7 @@ def create_calendar(service):
 
 def clear_schedule(service, date, calendar_id):
     # get list of events
-    events = service.events().list(calendarId=calendar_id,timeMin=date+"T00:00:00Z",timeMax=date+"T23:59:59Z").execute()
+    events = service.events().list(calendarId=calendar_id,timeMin=date+"T00:00:00+08:00",timeMax=date+"T23:59:59+08:00").execute()
     
     # delete each event
     for event in events['items']:

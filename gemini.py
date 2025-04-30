@@ -44,8 +44,8 @@ def get_schedule(message):
             {{
             'summary': '[appropriate name for the task]',
             'location': '[appropriate location for the task]',
-            'description': '[value based on criteria below]',
-            'colorId': '7',
+            'description': '[appropriate description for the task',
+            'colorId': '[value based on criteria below e.g. 1]',
             'start': {{
               'dateTime': yyyy-mm-ddThh:mm:00+08:00,
               timeZone': 'Australia/Perth',
